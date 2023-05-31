@@ -1,0 +1,433 @@
+.bootstrap .h2, .bootstrap h2 {
+    font-size: .95rem !important;
+    padding-top: 22px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    color: #db6104 !important;
+}
+
+.dz-message h2 {
+    color: black !important;
+    text-transform: none !important;
+}
+.bootstrap textarea {
+    border: 1px solid #ced4da;
+}
+
+.ah-dropzone {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border: 3px dotted #ccc;
+}
+
+.dz-message h2 {
+    color:black;
+}
+
+.artist-info-editor button {
+    /* margin-top: 1em; */
+}
+.ah-video-uploader {
+    margin-top: 1em;
+    display: flex;
+}
+
+.ah-video-uploader__progress {
+    flex: 1 1 50%;
+    margin: 0px 2em;
+    display: flex;
+    align-items: center;
+}
+.ah-video-thumbnail {
+    height: 100px;
+    width: auto;
+}
+.ah-organize-gallery table {
+    width: calc(100% - 20px);
+    margin: 0px auto;
+    margin-top: 1em;
+}
+
+.ah-organize__controls {
+    margin-top: 1em;
+}
+.ah-organize-gallery tr {
+    border-bottom: 1px black dashed;
+}
+
+.ah-organize__caption, .ah-organize__thumbnail {
+    border-left: 1px black dashed;
+}
+
+.ah-organize-gallery th {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.ah-organize-gallery td {
+    vertical-align: middle;
+}
+
+.ah-organize-gallery .handle {
+    cursor: move;
+    text-align: center;
+}
+.ah-organize__thumbnail {
+    padding: 20px;
+}
+
+.ah-organize__caption {
+    width: 100%;
+    text-align: center;
+}
+
+.ah-organize__caption textarea {
+    width: calc(100% - 20px);
+    height: 5em;
+    padding: 0;
+}
+
+.ah-organize__image--deleted {
+    background-color: red;
+    color: white;
+}
+
+/* Display side. */
+section.profile h1 {
+    font-size: 32px;
+}
+
+.desktop-styles .profile .gallery img {
+    width: calc(33% - 10px);
+    margin: 5px;
+}
+
+.ah-mobile__container .ah-gallery__profile-image {
+    /* display: block; */
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #bebebe;
+    box-sizing: border-box;
+    position: relative;
+    height: 60vw !important;
+}
+.ah-mobile__container .ah-gallery__profile-image img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.ah-gallery__profile-image:not(.ah-gallery__profile-image--current) {
+    /* display: none; */
+}
+.ah-mobile__container .ah-gallery__caption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.ah-mobile-gallery__container, .ah-gallery__profile-image {
+    /* width: 100vw !important; */
+    /* height: 60vw !important; */
+    /* max-height: 75vh; */
+    /* max-width: calc(100vw - 20px); */
+}
+
+.ah-mobile-gallery__container {
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.slick-prev, .slick-next {
+    z-index: 500;
+}
+
+.slick-prev {
+    left: 10px !important;
+}
+
+.slick-next {
+    right: 10px !important;
+}
+
+.slick-track, .slick-list {
+    /* height: 100%; */
+}
+.ah-desktop-gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 950px) {
+    .ah-desktop-gallery__container {
+        justify-content: center;
+    }
+    #primary.content-area {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+.ah-desktop-gallery__container:after {
+    content: "";
+}
+.ah-desktop__container .ah-gallery__profile-image {
+    flex: 0 0 280px;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 0.857142857rem 1.714285714rem 0.857142857rem 0;
+}
+.ah-desktop__container .ah-gallery__profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.ah-desktop__container .ah-gallery__caption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.857142857rem;
+    line-height: 2;
+    color: #757575;
+}
+
+.ah-mobile__container {
+    display: none;
+}
+.ah-desktop__container {
+    display: none;
+}
+@media screen and (min-width: 721px) {
+    body {
+    }
+    .ah-mobile__container {
+        display: none;
+    }
+    .ah-desktop__container {
+        display: block;
+    }
+}
+@media screen and (max-width: 720px) {
+    body {
+    }
+    .ah-profile__artist-header {
+        order: 2 !important;
+    }
+    .ah-mobile__container {
+        display: block;
+        order: 1 !important;
+        margin-top: 56px;
+    }
+    .ah-profile__top section {
+        order: 3;
+    }
+    .ah-desktop__container {
+        display: none;
+    }
+}
+
+.ah-profile__artist-name {
+    border-bottom: dotted 2px #eee;
+    font-size: 36px;
+    font-weight: bold;
+    color: #db6104;
+    padding-bottom: 2px;
+    margin-bottom: 19px;
+    margin-top: 60px;
+}
+
+.ah-profile__artist-header .randompage {
+    position: relative;
+    top: 20px;
+}
+
+.ah-profile__artist-header .randompage a {
+    position: static !important;
+}
+
+.ah-profile__artist-description {
+    margin-bottom: 27.429px;
+}
+
+
+/* Temporary presentation styles. */
+.mock-navbar {
+    position: fixed;
+    top: -1px;
+    width: 100%;
+    left: 0px;
+    background-color: #222222;
+    height: 56px;
+    z-index: 31337;
+}
+.admin-bar .mock-navbar {
+    top: 32px;
+}
+.mock-navcontainer {
+    width: 940px;
+    margin: 0px auto;
+    overflow: visible;
+}
+.mock-navimage {
+    background-image: url('images/navbar.png');
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 1024px;
+}
+
+.mock-share {
+    background-image: url('images/mock-share.png');
+    height: 30px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.ah-heading {
+    font-weight: bold;
+}
+
+.ah-profile__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.slick-prev::before {
+    content: "‹" !important;
+}
+
+.slick-next::before {
+    content: "›" !important;
+}
+.ah-profile__artist-statement {
+    color: #db6104;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.ah-headshotter__uploader {
+    border: 3px dotted #ccc !important;
+    width: 400px;
+    min-height: 200px;
+    position: relative;
+}
+
+.ah-headshotter__uploader img {
+    max-width: 200px;
+    height: auto;
+}
+
+.ah-headshotter__uploader .dz-message{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    padding-top: 40px;
+}
+
+.ah-headshotter__uploader:hover, .ah-dropzone:hover { cursor: pointer; }
+
+.ah-profile__blurb {
+    display:flex;
+}
+.ah-profile__headshot {
+    width: 30vh;
+    height: 30vh;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 0 0 30vh;
+    margin-right: 20px;
+}
+
+.headermore a, a:visited {
+    color: #21759b;
+    text-decoration: underline; /* couldn't get this to work here for some reason but this link should probably match all in site */
+}
+
+#primary {
+    padding-top: 7px;
+}
+
+
+/* confirmation modals for AH edit page  */
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 350px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #e6e6e6;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body .modal-header {color: #db6104;}
+
+.modal-header h3 {
+  margin-top: 0;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
